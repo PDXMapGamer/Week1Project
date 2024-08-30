@@ -1,14 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
 header{
     position:fixed;
-    z-index: 1;
+    z-index: 1;/* header was layered below the other sections so the z index needs to be increased. */
+    
 }
 
 .section1 {
     background-image: url(images/space1.jpg);
     background-size: cover;
-    height: 100vh;
+     height: 100vh; /*vh is the % of the viewable screen so 100vh will make the image the size of the browser window just like on the original website*/
     display: flex;
-    position: relative;
+    position: relative; /* enables absolute positioning on the child elements to position them correctly */
     flex-wrap: wrap;
     align-items: center;
 }
