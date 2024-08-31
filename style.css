@@ -1,20 +1,47 @@
 html{
-    scroll-behavior: smooth;
+     scroll-behavior: smooth;/*css rule that enables smooth scrolling */
 }
 header{
     position:fixed;
+    display: flex;
     z-index: 1;/* header was layered below the other sections so the z index needs to be increased. */
-    
+    top: 0px;
+    left:0px;
+}
+body{
+    margin: 0px;
+    /* Removes the margin that appears around the edge of the website for some reason that I dont know why */
+}
+nav{
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+ a:hover{
+    text-decoration: underline;
+} 
+
+div{
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    bottom: 25%;
+    left: 50px;
 }
 
 .section1 {
     background-image: url(images/space1.jpg);
     background-size: cover;
-     height: 100vh; /*vh is the % of the viewable screen so 100vh will make the image the size of the browser window just like on the original website*/
+    height: 100vh; /*vh is the % of the viewable screen so 100vh will make the image the size of the browser window just like on the original website*/
     display: flex;
     position: relative; /* enables absolute positioning on the child elements to position them correctly */
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; 
 }
 .section2 {
     background-image: url(images/space2.jpg);
@@ -41,4 +68,16 @@ header{
 .boldtext{
     font-size: 32px;
     font-weight: bold;
+}
+
+.ReadMoreButton{
+    color: white;
+    background-color: transparent;
+    outline-color: gray;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+}
+.ReadMoreButton:hover{
+    background-color: #242323;
 }
