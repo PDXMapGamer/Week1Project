@@ -5,8 +5,11 @@ header{
     position:fixed;
     display: flex;
     z-index: 1;/* header was layered below the other sections so the z index needs to be increased. */
-    top: 0px;
-    left:0px;
+    left:50px;
+}
+#logo{
+    font-size: 44px;
+    font-weight: bolder;
 }
 body{
     margin: 0px;
@@ -16,11 +19,16 @@ nav{
     display: flex; 
     flex-wrap: wrap;
     margin-left: 50px;
+    align-content: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 a{
     color: white;
     text-decoration: none;
+    margin-right: 50px;
+    margin-bottom: 10px;
 }
  a:hover{
     text-decoration: underline;
@@ -34,49 +42,50 @@ div{
     left: 50px;
 }
 
-.section1 {
-    background-image: url(images/space1.jpg);
+.sections{
+    /* All sections of <main> has the same properties aside from the background picture. */
     background-size: cover;
+    width: 100vw;
     height: 100vh; /*vh is the % of the viewable screen so 100vh will make the image the size of the browser window just like on the original website*/
     display: flex;
     position: relative; /* enables absolute positioning on the child elements to position them correctly */
     flex-wrap: wrap;
     align-items: center; 
 }
-.section2 {
-    background-image: url(images/space2.jpg);
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
+/* assigns the backgrounds to each section of the website */
+#s1{
+    background-image: url(images/space1.jpg);
 }
-.section3 {
-    background-image: url(images/space3.jpg);
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    flex-wrap: wrap;
-    align-items: center;
-}
-.smallertext{
-    font-size: 20px;
 
+#s2{
+    background-image: url(images/space2.jpg);
+}
+
+#s3{
+    background-image: url(images/space3.jpg);
+}
+
+.smallertext{
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 .boldtext{
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .ReadMoreButton{
     color: white;
     background-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
     outline-color: gray;
-    width: 50%;
+    width: 250px;
     height: 50px;
     cursor: pointer;
+    margin-top: 25px;
 }
 .ReadMoreButton:hover{
     background-color: #242323;
