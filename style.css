@@ -7,9 +7,7 @@ header{
     z-index: 1;/* header was layered below the other sections so the z index needs to be increased. */
     left:50px;
 }
-embed{
-    background-color: transparent;
-}
+
 #logo{
     font-size: 44px;
     font-weight: bolder;
@@ -27,7 +25,7 @@ nav{
     font-size: 20px;
 }
 
-a{
+.navbar{
     color: white;
     text-decoration: none;
     margin-right: 50px;
@@ -106,15 +104,22 @@ div{
     background-color: #202120;
 }
 footer{
+    background-color: black;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 50px;
 }
-.icon{
-    color: white;
+#footerlogo{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo{
     z-index: 1;
     margin-right: 10px;
     height: 30px;
     width: 30px;
+    margin-right: 20px;
 }

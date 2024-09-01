@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>SpaceY Recreation Project</title>
-    <!-- <script src="https://kit.fontawesome.com/f643fb1b94.js" crossorigin="anonymous"></script> -->
-    <!-- ^ script that enables icons to be used on the site -->
 </head>
 <body>
     
@@ -14,17 +12,18 @@
         <h1 id="logo">SpaceY</h1>
         <nav>
             <!-- <a> tags can link to other elements by setting their ID as the href. -->
-            <a href="#s1">Home</a>
-            <a href="#s1">About</a>
-            <a href="#s2">Tickets</a>
-            <a href="#s2">Rockets</a>
-            <a href="#s3">Pricing</a>
+            <a class="navbar" href="#s1">Home</a>
+            <a class="navbar" href="#s1">About</a>
+            <a class="navbar" href="#s2">Tickets</a>
+            <a class="navbar" href="#s2">Rockets</a>
+            <a class="navbar" href="#s3">Pricing</a>
         </nav>
     </header>
     <main>
          <section class="sections" id="s1"><!-- Each part of the site is split up into sections to improve code readability -->
             <div><!-- Groups the following 3 lines of code into 1 block to allow for easier stying -->
                 <embed src="images/Jimmy Neutron Season 2-3 Theme song.mp3" loop ="true" autostart="true">
+                    <!-- autoplays a fitting sone for the website, opted to leave the embed visible to allow the user to pause the audio if they wish -->
                 <p class="smallertext">RECENT LAUNCH</p>
                 <p class="boldtext">SHIPFLIGHT VIDEO</p>
                 <button class="ReadMoreButton">READ MORE</button>
@@ -45,17 +44,19 @@
             </div>
         </section>
         <a id="top" href="#s1">
+            <!-- button that returns to top of the page -->
             Retutn 
             to 
             top.
         </a>
     </main>
     <footer>
+        <!-- copyright stuff and logos that link to social media -->
         <p id="footerlogo">SpaceY © 2024</p>
-        <!-- <i class="icon" class="fa-brands fa-youtube"></i>
-        <i class="icon" class="fa-brands fa-twitter"></i>
-        <i class="icon" class="fa-brands fa-facebook"></i>
-        <i class="icon" class="fa-brands fa-instagram"></i> -->
+        <a href="https://www.youtube.com"><img class="logo" src="images/Youtube.png"></a>
+        <a href="https://www.facebook.com"><img class="logo" src="images/facebook.png"></a>
+        <a href="https://www.twitter.com"><img class="logo" src="images/twitter.png"></a>
+        <a href="https://myspace.com/discover/featured"><img class="logo" src="images/Myspace.png"></a>
     </footer>
 </body>
 </html>
