@@ -7,6 +7,9 @@ header{
     z-index: 1;/* header was layered below the other sections so the z index needs to be increased. */
     left:50px;
 }
+embed{
+    background-color: transparent;
+}
 #logo{
     font-size: 44px;
     font-weight: bolder;
@@ -101,4 +104,17 @@ div{
 }
 #top:hover{
     background-color: #202120;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+}
+.icon{
+    color: white;
+    z-index: 1;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
 }
