@@ -1,125 +1,128 @@
-html{
-     scroll-behavior: smooth;/*css rule that enables smooth scrolling */
+html {
+  scroll-behavior: smooth; /*css rule that enables smooth scrolling */
 }
-header{
-    position:fixed;
-    display: flex;
-    z-index: 1;/* header was layered below the other sections so the z index needs to be increased. */
-    left:50px;
-}
-
-#logo{
-    font-size: 44px;
-    font-weight: bolder;
-}
-body{
-    margin: 0px;
-    /* Removes the margin that appears around the edge of the website for some reason that I dont know why */
-}
-nav{
-    display: flex; 
-    flex-wrap: wrap;
-    margin-left: 50px;
-    align-content: center;
-    font-weight: bold;
-    font-size: 20px;
+header {
+  position: fixed;
+  display: flex;
+  z-index: 1; /* header was layered below the other sections so the z index needs to be increased. */
+  left: 50px;
 }
 
-.navbar{
-    color: white;
-    text-decoration: none;
-    margin-right: 50px;
-    margin-bottom: 10px;
+#logo {
+  font-size: 44px;
+  font-weight: bolder;
+  color: white;
 }
- a:hover{
-    text-decoration: underline;
-} 
-
-div{
-    display: flex;
-    flex-direction: column;
-    position:absolute;
-    bottom: 25%;
-    left: 50px;
+body {
+  margin: 0px;
+  /* Removes the margin that appears around the edge of the website for some reason that I dont know why */
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  align-content: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.sections{
-    /* All sections of <main> has the same properties aside from the background picture. */
-    background-size: cover;
-    width: 100vw;
-    height: 100vh; /*vh is the % of the viewable screen so 100vh will make the image the size of the browser window just like on the original website*/
-    display: flex;
-    position: relative; /* enables absolute positioning on the child elements to position them correctly */
-    flex-wrap: wrap;
-    align-items: center; 
+.navbar {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 25%;
+  left: 50px;
+  color: white;
+}
+
+.sections {
+  /* All sections of <main> has the same properties aside from the background picture. */
+  background-size: cover;
+  width: 100vw;
+  height: 100vh; /*vh is the % of the viewable screen so 100vh will make the image the size of the browser window just like on the original website*/
+  display: flex;
+  position: relative; /* enables absolute positioning on the child elements to position them correctly */
+  flex-wrap: wrap;
+  align-items: center;
 }
 /* assigns the backgrounds to each section of the website */
-#s1{
-    background-image: url(images/space1.jpg);
+#s1 {
+  background-image: url(images/space1.jpg);
 }
 
-#s2{
-    background-image: url(images/space2.jpg);
+#s2 {
+  background-image: url(images/space2.jpg);
 }
 
-#s3{
-    background-image: url(images/space3.jpg);
+#s3 {
+  background-image: url(images/space3.jpg);
 }
 
-.smallertext{
-    font-size: 24px;
-    margin-bottom: 10px;
+.smallertext {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
-.boldtext{
-    font-size: 40px;
-    font-weight: bolder;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.boldtext {
+  font-size: 40px;
+  font-weight: bolder;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.ReadMoreButton{
-    color: white;
-    background-color: transparent;
-    font-size: 16px;
-    font-weight: 500;
-    outline-color: gray;
-    width: 250px;
-    height: 50px;
-    cursor: pointer;
-    margin-top: 25px;
+.ReadMoreButton {
+  color: white;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  outline-color: gray;
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 25px;
 }
-.ReadMoreButton:hover{
-    background-color: #242323;
+.ReadMoreButton:hover {
+  background-color: #242323;
 }
-#top{
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    border-style: solid;
-    border-color: gray;
-    color: white;
-    font-size: 20px;
+#top {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  border-style: solid;
+  border-color: gray;
+  color: white;
+  font-size: 20px;
 }
-#top:hover{
-    background-color: #202120;
+#top:hover {
+  background-color: #202120;
 }
-footer{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 50px;
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
 }
-#footerlogo{
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 20px;
+#footerlogo {
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
 }
-.logo{
-    z-index: 1;
-    margin-right: 10px;
-    height: 30px;
-    width: 30px;
-    margin-right: 20px;
+.logo {
+  z-index: 1;
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
 }
